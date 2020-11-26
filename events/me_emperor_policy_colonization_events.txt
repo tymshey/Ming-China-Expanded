@@ -1,0 +1,55 @@
+# Celestial Empire colonization policy selection event
+
+namespace = me_emperor_policy_colonization_event
+
+country_event = {
+	id = me_emperor_policy_colonization_event.1
+	title = "me_emperor_policy_colonization.1.title"
+	desc = "me_emperor_policy_colonization.1.desc"
+	picture = NATIVES_eventPicture
+	
+    trigger = {
+		NOT = { has_country_flag = me_policy_colonization_taken }
+	}
+	
+	immediate = { }
+
+	is_triggered_only = yes
+
+	option = {
+		name = "me_emperor_policy_colonization.1.a"
+		ai_chance = { factor = 1 }
+		set_country_flag = me_policy_colonization_taken
+		add_country_modifier = {
+			name = "me_policy_colonization_1"
+			duration = -1
+		}
+	}
+	option = {
+		name = "me_emperor_policy_colonization.1.b"
+		ai_chance = { factor = 97 }
+		set_country_flag = me_policy_colonization_taken
+		add_country_modifier = {
+			name = "me_policy_colonization_2"
+			duration = -1
+		}
+	}
+	option = {
+		name = "me_emperor_policy_colonization.1.c"
+		ai_chance = { factor = 1 }
+		set_country_flag = me_policy_colonization_taken
+		add_country_modifier = {
+			name = "me_policy_colonization_3"
+			duration = -1
+		}
+	}
+	option = {
+		name = "me_emperor_policy_colonization.1.d"
+		ai_chance = { factor = 1 }
+		set_country_flag = me_policy_colonization_taken
+		add_country_modifier = {
+			name = "me_policy_colonization_4"
+			duration = -1
+		}
+	}
+}

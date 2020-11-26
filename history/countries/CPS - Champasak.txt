@@ -1,0 +1,16 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = chinese
+primary_culture = lao
+religion = buddhism
+capital = 608	# Champassak
+
+1400.1.1 = {
+	monarch = {
+		name = "Nan"
+		dynasty = "Cham"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}

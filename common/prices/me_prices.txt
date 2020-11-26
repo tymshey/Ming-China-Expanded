@@ -1,0 +1,12 @@
+# Eastern resources
+
+tea = {
+	base_price = 3
+}
+chinaware = {
+	base_price = 5
+}
+
+spices = {
+	base_price = 4
+}

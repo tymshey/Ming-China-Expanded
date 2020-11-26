@@ -1,0 +1,34 @@
+eastern = {
+	
+	flags_with_emblem_percentage = 33
+	flag_emblem_index_range = { 58 80 }
+	
+	confucianism = {
+		color = { 214 229 140 }
+		icon = 9
+		country = {
+			tolerance_heretic = 2
+			adm_tech_cost_modifier = -0.1
+		}
+		country_as_secondary = {
+			adm_tech_cost_modifier = -0.1
+			stability_cost_modifier = -0.1
+		}
+		
+		heretic = { TAOIST }
+		uses_harmony = yes
+		
+		holy_sites = { 1816 1836 679 1821 4790 }
+		
+		blessings = {
+			me_legitimize_government
+			me_back_to_the_front
+			me_establish_monasteries
+			me_promote_territorial_rights
+			me_will_of_the_sky
+		}
+	}
+	
+	crusade_name = CRUSADE
+	
+}

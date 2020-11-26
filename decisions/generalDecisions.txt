@@ -1,0 +1,79 @@
+country_decisions = {
+
+	me_ming_nation_policy_colonization_1 = {
+		major = yes
+		potential = {
+			always = yes
+		}
+		allow = {
+			has_idea_group = exploration_ideas
+			has_institution = new_world_i
+			dip_power = 25
+			NOT = { has_country_flag = me_policy_colonization_taken }
+		}
+		effect = {
+			country_event = {
+				id = me_emperor_policy_colonization_event.1
+				days = 1
+			}
+		}
+		ai_importance = 0
+	}
+	
+	me_ming_nation_policy_colonization_1_remove = {
+		major = yes
+		potential = {
+			always = yes
+		}
+		allow = {
+			has_country_flag = me_policy_colonization_taken
+		}
+		effect = {
+			clr_country_flag = me_policy_colonization_taken
+			remove_country_modifier = me_policy_colonization_1
+			remove_country_modifier = me_policy_colonization_2
+			remove_country_modifier = me_policy_colonization_3
+			remove_country_modifier = me_policy_colonization_4
+		}
+		ai_importance = 0
+	}
+	
+	me_ming_nation_policy_wardoctrine_1 = {
+		major = yes
+		potential = {
+			always = yes
+		}
+		allow = {
+			OR = {
+				has_idea_group = defensive_ideas
+				has_idea_group = offensive_ideas
+			}
+			NOT = { has_country_flag = me_policy_wardoctrine_taken }
+		}
+		effect = {
+			country_event = {
+				id = me_emperor_policy_wardoctrine_event.1
+				days = 1
+			}
+		}
+		ai_importance = 0
+	}
+	
+	me_ming_nation_policy_wardoctrine_1_remove = {
+		major = yes
+		potential = {
+			always = yes
+		}
+		allow = {
+			has_country_flag = me_policy_wardoctrine_taken
+		}
+		effect = {
+			clr_country_flag = me_policy_wardoctrine_taken
+			remove_country_modifier = me_policy_wardoctrine_1
+			remove_country_modifier = me_policy_wardoctrine_2
+			remove_country_modifier = me_policy_wardoctrine_3
+			remove_country_modifier = me_policy_wardoctrine_4
+		}
+		ai_importance = 0
+	}
+}

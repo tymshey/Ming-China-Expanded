@@ -1,0 +1,37 @@
+namespace = me_timurids_events
+
+country_event = {
+	id = me_timurids_events.1
+	title = "me_timurids_events.1.title"
+	desc = "me_timurids_events.1.desc"
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+    trigger = {
+		OR = {
+			tag = TIM
+			tag = ILK
+		}
+		NOT = { has_country_modifier = me_timurids_great_mosque_built }
+	}
+	
+	immediate = { }
+
+	is_triggered_only = no
+	
+	mean_time_to_happen = {
+		months = 50
+	}
+
+	option = {
+		name = "me_timurids_events.1.a"
+		add_country_modifier = {
+				name = "me_timurids_great_mosque_built"
+				duration = 3650
+		}
+		add_adm_power = 25
+	}
+	option = {
+		name = "me_timurids_events.1.b"
+		add_treasury = 250
+	}
+}

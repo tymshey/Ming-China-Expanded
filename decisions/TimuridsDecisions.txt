@@ -1,0 +1,141 @@
+country_decisions = {
+	
+	me_timurids_nation_restore_mongol_empire = {
+		major = yes
+		potential = {
+			tag = TIM
+			NOT = {
+				exists = MGE
+			}
+		}
+		allow = {
+			owns = 446
+			owns = 1973
+			owns = 454
+			owns = 707
+			owns = 1816
+			owns = 2891
+			owns = 718
+			owns = 698
+			owns = 416
+			owns = 423
+			owns = 464
+			owns = 730
+		}
+		effect = {
+			change_tag = MGE
+			add_prestige = 100
+		}
+		ai_importance = 400
+	}
+	
+	me_timurids_nation_restore_ilkhanate = {
+		major = yes
+		potential = {
+			tag = TIM
+			NOT = {
+				exists = ILK
+			}
+		}
+		allow = {
+			owns_core_province = 1973 # Urgench
+			owns_core_province = 454 # Samarkhand
+			owns_core_province = 453 # Qarshi
+			owns_core_province = 442 # Bukhara 
+			owns_all_provinces = {
+				region = persia
+				region = khorasan
+			}
+		}
+		effect = {
+			change_tag = ILK
+			add_prestige = 50
+			add_country_modifier = {
+				name = me_timurids_ilkhanate_restored
+				duration = -1
+			}
+		}
+		ai_importance = 400
+	}
+	
+	me_timurids_nation_control_hormuz_trade = {
+		major = no
+		potential = {
+			OR = {
+				tag = TIM
+				tag = ILK
+			}
+			NOT = { has_country_flag = me_timurids_control_hormuz_trade_flag }
+		}
+		allow = {
+			owns = 3141
+			owns = 398
+			owns = 397
+			owns = 399
+			owns = 400
+			398 = {
+				fort_level = 2
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = me_timurids_control_hormuz_trade
+				duration = -1
+			}
+			add_faction = me_timurids_traders
+			set_country_flag = me_timurids_control_hormuz_trade_flag
+		}
+		ai_importance = 400
+	}
+	
+	me_timurids_nation_rebuild_bibikhanym_mosque = {
+		major = no
+		potential = {
+			OR = {
+				tag = TIM
+				tag = ILK
+			}
+			NOT = { has_country_flag = me_bibikhanym_mosque_rebuilt_flag }
+		}
+		allow = {
+			owns = 454 # Samarkhand
+			treasury = 550
+		}
+		effect = {
+			454 = {
+				add_province_modifier = {
+					name = me_bibikhanym_mosque
+					duration = -1
+				}
+			}
+			add_faction = me_timurids_ghazi_warriors
+			set_country_flag = me_bibikhanym_mosque_rebuilt_flag
+		}
+		ai_importance = 400
+	}
+	
+	me_timurids_nation_build_mosque_of_gawhar_shad = {
+		major = no
+		potential = {
+			OR = {
+				tag = TIM
+				tag = ILK
+			}
+			NOT = { has_country_flag = me_mosque_of_gawhar_shad_built_flag }
+		}
+		allow = {
+			owns = 436 # Mashhad
+			treasury = 500
+		}
+		effect = {
+			436 = {
+				add_province_modifier = {
+					name = me_mosque_of_gawhar_shad
+					duration = -1
+				}
+			}
+			set_country_flag = me_mosque_of_gawhar_shad_built_flag
+		}
+		ai_importance = 400
+	}
+}

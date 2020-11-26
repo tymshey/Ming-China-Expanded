@@ -1,0 +1,64 @@
+chinese_peasant_war = {
+	potential = {
+		has_reform = celestial_empire
+	}
+	
+	can_start = {
+		has_any_disaster = no
+		has_reform = celestial_empire
+		NOT = {
+			stability = -1
+			imperial_mandate = 50
+		}
+	}
+	
+	can_stop = {
+		has_any_disaster = yes
+		stability = 1
+		imperial_mandate = 60
+	}
+	
+	down_progress = {
+		factor = 1
+	}
+	
+	progress = {
+		modifier = {
+			factor = 1
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 1
+			NOT = {
+				stability = -1
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				stability = -2
+			}
+		}
+	}
+	
+	can_end = {
+		stability = 2
+		imperial_mandate = 60
+	}
+	
+	modifier = {
+		global_unrest = 10
+		harsh_treatment_cost = 0.2
+		global_spy_defence = -0.1
+		stability_cost_modifier = 0.1
+	}
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			#1000 = 0
+			# None
+		}
+	}
+}

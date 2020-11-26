@@ -1,0 +1,37 @@
+# Wei-suo system corruption disaster events
+
+namespace = disaster_weisuo_system_corruption
+
+country_event = {
+	id = disaster_weisuo_system_corruption.1
+	title = "disaster_weisuo_system_corruption1.t"
+	desc = "disaster_weisuo_system_corruption1.d"
+	picture = ST_PETERS_CHURCH_eventPicture
+	
+	is_triggered_only = yes
+
+	immediate = {
+	    add_army_tradition = -10
+	}
+
+	option = {
+		name = "weisuo_system_corruption1_option1"
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = disaster_weisuo_system_corruption.2
+	title = "disaster_weisuo_system_corruption2.t"
+	desc = "disaster_weisuo_system_corruption2.d"
+	picture = ST_PETERS_CHURCH_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		add_prestige = 10
+		name = "weisuo_system_corruption2_option1"
+		ai_chance = { factor = 100 }
+	}
+	
+}

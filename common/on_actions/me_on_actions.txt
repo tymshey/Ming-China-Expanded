@@ -1,0 +1,12 @@
+# Actions
+
+on_startup = {
+	if = {
+		limit = {
+			is_emperor_of_china = yes
+		}
+		country_event = {
+			id = me_emperor_events.2
+		}
+	}
+}

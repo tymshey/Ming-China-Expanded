@@ -1,0 +1,64 @@
+# Celestial Empire war doctrine policy selection event
+
+namespace = me_emperor_policy_wardoctrine_event
+
+country_event = {
+	id = me_emperor_policy_wardoctrine_event.1
+	title = "me_emperor_policy_wardoctrine.1.title"
+	desc = "me_emperor_policy_wardoctrine.1.desc"
+	picture = MONGOL_BANNERS_eventPicture
+	
+    trigger = {
+		NOT = { has_country_flag = me_policy_wardoctrine_taken }
+	}
+	
+	immediate = { }
+
+	is_triggered_only = yes
+
+	option = {
+		name = "me_emperor_policy_wardoctrine.1.a"
+		ai_chance = { factor = 1 }
+		set_country_flag = me_policy_wardoctrine_taken
+		add_country_modifier = {
+			name = "me_policy_wardoctrine_1"
+			duration = -1
+		}
+	}
+	option = {
+		name = "me_emperor_policy_wardoctrine.1.b"
+		ai_chance = { factor = 96 }
+		set_country_flag = me_policy_wardoctrine_taken
+		add_country_modifier = {
+			name = "me_policy_wardoctrine_2"
+			duration = -1
+		}
+	}
+	option = {
+		name = "me_emperor_policy_wardoctrine.1.c"
+		ai_chance = { factor = 1 }
+		set_country_flag = me_policy_wardoctrine_taken
+		add_country_modifier = {
+			name = "me_policy_wardoctrine_3"
+			duration = -1
+		}
+	}
+	option = {
+		name = "me_emperor_policy_wardoctrine.1.d"
+		ai_chance = { factor = 1 }
+		set_country_flag = me_policy_wardoctrine_taken
+		add_country_modifier = {
+			name = "me_policy_wardoctrine_4"
+			duration = -1
+		}
+	}
+	option = {
+		name = "me_emperor_policy_wardoctrine.1.e"
+		ai_chance = { factor = 1 }
+		set_country_flag = me_policy_wardoctrine_taken
+		add_country_modifier = {
+			name = "me_policy_wardoctrine_5"
+			duration = -1
+		}
+	}
+}

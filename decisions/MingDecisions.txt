@@ -1,0 +1,284 @@
+country_decisions = {
+
+	me_ming_nation_1 = {
+		major = yes
+		potential = {
+			is_emperor_of_china = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { has_country_flag = me_great_canal_built }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1816		# Beijing
+				province_id = 1821		# Nanjing
+				province_id = 667		# Guangzhou
+				province_id = 688		# Kaifeng
+			}
+		}
+		allow = {
+			owns = 1816		# Beijing
+			owns = 1821		# Nanjing
+			owns = 667		# Guangzhou
+			owns = 688		# Kaifeng
+			is_at_war = no
+			is_emperor_of_china = yes
+			treasury = 10000
+		}
+		effect = {
+			1816 = {
+				add_province_modifier = {
+					name = "me_great_chinese_canal"
+					duration = -1
+				}
+			}
+			1821 = {
+				add_province_modifier = {
+					name = "me_great_chinese_canal"
+					duration = -1
+				}
+			}
+			667 = {
+				add_province_modifier = {
+					name = "me_great_chinese_canal"
+					duration = -1
+				}
+			}
+			688 = {
+				add_province_modifier = {
+					name = "me_great_chinese_canal"
+					duration = -1
+				}
+			}
+			add_treasury = -10000
+			set_country_flag = me_great_canal_built
+		}
+		ai_importance = 400
+	}
+	
+	me_ming_nation_2 = {
+		major = yes
+		potential = {
+			is_emperor_of_china = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { has_country_flag = me_great_capital_built }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1816		# Beijing
+			}
+		}
+		allow = {
+			owns = 1816		# Beijing
+			is_at_war = no
+			is_emperor_of_china = yes
+			treasury = 25000
+		}
+		effect = {
+			1816 = {
+				add_province_modifier = {
+					name = "me_great_chinese_capital"
+					duration = -1
+				}
+			}
+			add_treasury = -25000
+			set_country_flag = me_great_capital_built
+		}
+		ai_importance = 400
+	}
+	
+	me_ming_nation_3 = {
+		major = no
+		potential = {
+			is_emperor_of_china = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { has_country_flag = me_fortified_key_cities }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1816		# Beijing
+				province_id = 1821		# Nanjing
+				province_id = 667		# Guangzhou
+			}
+		}
+		allow = {
+			owns = 1816		# Beijing
+			owns = 1821		# Nanjing
+			owns = 667		# Guangzhou
+			is_at_war = no
+			is_emperor_of_china = yes
+			treasury = 7500
+		}
+		effect = {
+			1816 = {
+				add_province_modifier = {
+					name = "me_fortified_key_city"
+					duration = -1
+				}
+			}
+			1821 = {
+				add_province_modifier = {
+					name = "me_fortified_key_city"
+					duration = -1
+				}
+			}
+			667 = {
+				add_province_modifier = {
+					name = "me_fortified_key_city"
+					duration = -1
+				}
+			}
+			add_treasury = -7500
+			set_country_flag = me_fortified_key_cities
+		}
+		ai_importance = 400
+	}
+	
+	me_ming_nation_4 = {
+		major = no
+		potential = {
+			is_emperor_of_china = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { has_country_flag = me_charter_colonies_taken }
+		}
+		allow = {
+			has_idea_group = expansion_ideas
+			has_institution = new_world_i
+			is_at_war = no
+			is_emperor_of_china = yes
+			treasury = 1000
+		}
+		effect = {
+			add_country_modifier = {
+				name = me_mng_charter_colonies
+				duration = -1
+			}
+			667 = {
+				add_province_modifier = {
+					name = "me_major_colonial_port"
+					duration = -1
+				}
+			}
+			add_treasury = -1000
+			set_country_flag = me_charter_colonies_taken
+		}
+		ai_importance = 400
+	}
+	
+	me_ming_nation_5 = {
+		major = no
+		potential = {
+			is_emperor_of_china = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { has_country_flag = me_jinyi_wei_decision }
+		}
+		allow = {
+			has_idea_group = spy_ideas
+			is_at_war = no
+			is_emperor_of_china = yes
+			treasury = 2500
+		}
+		effect = {
+			add_country_modifier = {
+				name = me_mng_jinyi_wei
+				duration = -1
+			}
+			add_treasury = -2500
+			set_country_flag = me_jinyi_wei_decision
+		}
+		ai_importance = 400
+	}
+	
+	me_china_nation_rebuild_six_harmonies_pagoda = {
+		major = no
+		potential = {
+			is_emperor_of_china = yes
+			NOT = { has_country_flag = me_six_harmonies_pagoda_rebuilt_flag }
+		}
+		allow = {
+			is_at_war = no
+			is_emperor_of_china = yes
+			treasury = 250
+		}
+		effect = {
+			684 = {
+				add_province_modifier = {
+					name = "me_six_harmonies_pagoda_rebuilt"
+					duration = -1
+				}
+			}
+			add_treasury = -250
+			set_country_flag = me_six_harmonies_pagoda_rebuilt_flag
+		}
+		ai_importance = 400
+	}
+	
+	me_china_nation_form_dongguo = {
+		major = yes
+		potential = {
+			is_emperor_of_china = yes
+			NOT = { has_country_flag = me_dongguo_formed }
+		}
+		allow = {
+			china_superregion = {
+				type = all
+				owned_by = ROOT
+			}
+			manchuria_region = {
+				type = all
+				owned_by = ROOT
+			}
+			korea_region = {
+				type = all
+				owned_by = ROOT
+			}
+			indo_china_region = {
+				type = all
+				owned_by = ROOT
+			}
+			malaya_region = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					is_island = yes
+				}
+			}
+			burma_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			1816 = {
+				add_province_modifier = {
+					name = "me_dongguo_capital"
+					duration = -1
+				}
+			}
+			add_country_modifier = {
+				name = "me_dongguo_formed"
+				duration = -1
+			}
+			change_tag = DGG
+			set_country_flag = me_dongguo_formed
+			country_event = {
+				id = ideagroups.1
+				days = 1
+			}
+		}
+		ai_importance = 400
+	}

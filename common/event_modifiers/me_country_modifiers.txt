@@ -1,0 +1,99 @@
+# Country modifiers
+
+me_mng_charter_colonies = {
+	colonists = 1
+	global_tariffs = 0.25
+	global_colonial_growth = 10
+}
+
+me_mng_jinyi_wei = {
+	spy_offence = 0.1
+	global_spy_defence = 0.1
+	rebel_support_efficiency = 0.25
+	discipline = 0.05
+}
+
+me_timurids_control_hormuz_trade = {
+	placed_merchant_power = 2
+	trade_efficiency = 0.1
+	embargo_efficiency = 0.1
+}
+
+me_timurids_ilkhanate_restored = {
+	land_morale = 0.1
+	prestige = 0.5
+}
+
+me_timurids_great_mosque_built = {
+	prestige = 0.5
+	global_missionary_strength = 0.03
+}
+
+me_kongzi_scholar_modifier = {
+	global_missionary_strength = 0.03
+	adm_tech_cost_modifier = -0.05
+}
+
+me_purple_turban_rebellion = {
+	imperial_mandate = -0.05
+	reduced_liberty_desire = -5
+	global_unrest = 5
+	harsh_treatment_cost = -0.1
+}
+
+me_dongguo_formed = {
+	imperial_mandate = 0.02
+	global_unrest = -2.5
+	diplomatic_reputation = 1
+	ae_impact = -0.4
+}
+
+# Chinese edict modifiers
+
+me_chinaedict_1_support_colonialism = {
+	global_colonial_growth = 5
+	global_tariffs = 0.1
+}
+
+me_chinaedict_2_support_missionaries = {
+	missionaries = 1
+	global_missionary_strength = 0.02
+}
+me_chinaedict_3_support_trade = {
+	placed_merchant_power = 2
+	trade_steering = 0.05
+}
+
+me_chinaedict_4_support_spies = {
+	spy_offence = 0.05
+	global_spy_defence = 0.05
+	rebel_support_efficiency = 0.1
+}
+
+# Mission modifiers
+
+mng_mission_secure_trade_me = {
+	trade_efficiency = 0.05
+}
+
+me_mng_mission_the_three_libraries = {
+	imperial_mandate = 0.01
+	adm_tech_cost_modifier = -0.05
+}
+
+me_mng_mission_the_preservation_of_knowledge = {
+	country_admin_power = 1
+}
+
+me_mng_mission_indian_trade = {
+	trade_efficiency = 0.1
+	merchants = 2
+}
+
+me_mng_mission_spice = {
+	trade_steering = 0.1
+}
+
+me_mng_mission_the_chinese_prosperity = {
+	stability_cost_modifier = -0.1
+}

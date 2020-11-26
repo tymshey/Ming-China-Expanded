@@ -1,0 +1,44 @@
+# Country ideas
+
+DGG_ideas = {
+	start = {
+		prestige = 1
+		governing_capacity_modifier = 0.1
+	}
+	
+	bonus = {
+		country_admin_power = 1
+	}	
+
+	trigger = {
+		tag = DGG
+	}
+	free = yes
+	
+	dgg_nation_of_many_cultures = {
+		global_unrest = -3.5
+		num_accepted_cultures = 4
+	}
+	dgg_ten_great_campaigns = {
+		land_morale = 0.15
+		discipline = 0.05
+	}
+	dgg_emperor_of_the_east = {
+		meritocracy = 1.5
+	}
+	dgg_harmonious_empire = {
+		yearly_harmony = 1.25
+	}
+	dgg_open_minds = {
+		technology_cost = -0.1
+		idea_cost = -0.1
+	}
+	dgg_the_silk_road = {
+		merchants = 1
+		trade_efficiency = 0.15
+	}
+	dgg_the_imperial_court = {
+		advisor_pool = 1
+		advisor_cost = -0.5
+	}
+}

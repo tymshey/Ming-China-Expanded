@@ -1,0 +1,8 @@
+# Vassals of the Lan Xang kingdom
+
+vassal = {
+	first = LXA
+	second = CPS
+	start_date = 1440.2.1
+	end_date = 1521.1.1
+}

@@ -1,0 +1,8 @@
+# Eastern Asia
+DGG = "countries/Dongguo.txt"
+LGU = "countries/Lingyun.txt"
+NGY = "countries/Nanyungui.txt"
+TUM = "countries/Tumed.txt"
+CPS = "countries/Champasak.txt"
+# Tibet
+YUG = "countries/Yugur.txt"

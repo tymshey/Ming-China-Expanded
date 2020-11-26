@@ -1,0 +1,13 @@
+# Event modifiers
+
+eunuchs_corrupt_the_country = {
+	yearly_corruption = 0.1
+	advisor_cost = 0.25
+	global_tax_modifier = -0.05
+	imperial_mandate = -0.01
+}
+
+me_good_feng_shui = {
+	imperial_mandate = 0.01
+	global_tax_modifier = 0.05
+}

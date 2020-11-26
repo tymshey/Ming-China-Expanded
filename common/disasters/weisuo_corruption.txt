@@ -1,0 +1,63 @@
+weisuo_corruption = {
+	potential = {
+		has_reform = celestial_empire
+	}
+	
+	can_start = {
+		has_any_disaster = no
+		has_reform = celestial_empire
+		empire_of_china_reform_level = 1
+		NOT = {
+			stability = 0
+			imperial_mandate = 45
+		}
+	}
+	
+	can_stop = {
+	    army_tradition = 35
+		imperial_mandate = 60
+	}
+	
+	down_progress = {
+		factor = 1
+	}
+	
+	progress = {
+		modifier = {
+			factor = 1
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 1
+			empire_of_china_reform_level = 2
+		}
+	}
+	
+	can_end = {
+	    OR = {
+	    army_tradition = 80
+		imperial_mandate = 80
+	    }
+	}
+	
+	modifier = {
+		discipline = -0.10
+		drill_gain_modifier = -1
+		land_maintenance_modifier = 1
+		defensiveness = -0.25
+		global_manpower_modifier = -0.1
+	}
+	
+	on_start = disaster_weisuo_system_corruption.1
+	on_end = disaster_weisuo_system_corruption.2
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			#1000 = 0
+			# None
+		}
+	}
+	
+}

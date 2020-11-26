@@ -1,0 +1,62 @@
+# Province modifiers
+
+# China
+
+me_great_chinese_canal = {
+	trade_value_modifier = 0.2
+	trade_goods_size_modifier = 0.25
+	local_ship_repair = 0.5
+	supply_limit_modifier = 0.25
+}
+
+me_great_chinese_capital = {
+	prestige = 2
+	trade_value_modifier = 0.25
+	trade_goods_size_modifier = 0.1
+	institution_growth = 2
+	local_institution_spread = 0.1
+	local_production_efficiency = 0.1
+	local_development_cost = -0.25
+	local_culture_conversion_cost = 0.5
+	local_core_creation = 0.5
+	local_missionary_strength = -0.03
+}
+
+me_fortified_key_city = {
+	garrison_growth = 0.1
+	local_defensiveness = 0.3
+	supply_limit_modifier = 0.25
+}
+
+me_major_colonial_port = {
+	trade_value_modifier = 0.2
+	local_institution_spread = 0.1
+}
+
+me_six_harmonies_pagoda_rebuilt = {
+	missionaries = 1
+	tolerance_own = 1
+	tolerance_heretic = 1
+	tolerance_heathen = 1
+}
+
+me_dongguo_capital = {
+	prestige = 1
+	institution_growth = 1.25
+	local_development_cost = -0.25
+}
+
+# Timurids
+
+me_bibikhanym_mosque = {
+	local_tax_modifier = 0.8
+	local_missionary_strength = -0.02
+	local_religious_unity_contribution = 0.1
+	local_institution_spread = 0.1
+}
+
+me_mosque_of_gawhar_shad = {
+	local_tax_modifier = 0.8
+	local_missionary_strength = -0.02
+	trade_value_modifier = 0.5
+}

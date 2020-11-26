@@ -1,0 +1,16 @@
+government = tribal
+add_government_reform = steppe_horde
+primary_culture = oirats
+religion = vajrayana
+technology_group = nomad_group
+capital = 4813
+
+1400.1.1 = {
+	monarch = {
+		name = "Toghan"
+		dynasty = "Erdeni"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}

@@ -1,0 +1,67 @@
+celestial_empire = {
+	icon = "celestial_empire"
+	allow_normal_conversion = no
+	potential = {
+		is_emperor_of_china = yes
+		NOT = { has_global_flag = empire_of_china_dismantled }
+	}
+	legacy_equivalent = celestial_empire_legacy
+	maintain_dynasty = yes
+	allow_force_tributary = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 25
+	lock_level_when_selected = yes
+	allow_banners = yes
+	has_meritocracy = yes
+	nation_designer_trigger = {
+		culture_group = east_asian
+		technology_group = chinese
+		capital_scope = {
+			OR = {
+				region = north_china_region
+				region = xinan_region
+				region = south_china_region
+			}
+		}
+	}
+	
+	effect = {
+		add_faction = me_temples
+		add_faction = me_eunuchs
+		add_faction = me_bureaucrats
+	}
+	
+	removed_effect = {
+		remove_faction = me_temples
+		remove_faction = me_eunuchs
+		remove_faction = me_bureaucrats
+	}
+	
+	fixed_rank = 3
+	start_territory_to_estates = 0.9
+
+	modifiers = {
+		prestige = 2
+		liberty_desire_from_subject_development = -0.25
+		diplomatic_upkeep = 1
+		advisor_pool = 2
+		garrison_size = 0.2
+		diplomats = 1
+		development_cost = -0.2
+		adm_advisor_cost = -0.1
+		yearly_absolutism = 0.1
+		yearly_corruption = 0.01
+		church_influence_modifier = -0.1
+		nobles_influence_modifier = -0.1
+		burghers_influence_modifier = -0.1
+		governing_capacity = 300
+	}
+	
+	ai = {
+		factor = 1000 # should always be picked if available
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}

@@ -1,0 +1,218 @@
+# Celestial Emperor Events
+
+namespace = me_emperor_events
+
+country_event = {
+	id = me_emperor_events.1
+	title = "me_emperor_events.1.t"
+	desc = "me_emperor_events.1.d"
+	picture = ACCUSATION_eventPicture
+	
+    trigger = {
+		ruler_has_personality = naive_personality
+		religion = confucianism
+		culture_group = east_asian
+		has_reform = celestial_empire
+		NOT = { has_country_modifier = eunuchs_corrupt_the_country }
+	}
+	
+	immediate = { }
+
+	is_triggered_only = no
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+
+	option = {
+		name = "me_emperor_events.1.a"
+		add_country_modifier = {
+				name = "eunuchs_corrupt_the_country"
+				duration = 9125
+		}
+		add_meritocracy = -10
+		add_years_of_income = -0.2
+		add_mandate = -25
+		add_corruption = 5
+	}
+}
+
+# Purple Turban Rebellion
+
+country_event = {
+	id = me_emperor_events.3
+	title = "me_emperor_events.3.title"
+	desc = "me_emperor_events.3.desc"
+	picture = COUNTRY_COLLAPSE_eventPicture
+	major = yes
+	
+	trigger = {
+		ruler_has_personality = naive_personality
+		religion = confucianism
+		culture_group = east_asian
+		has_reform = celestial_empire
+		tag = MNG
+		NOT = { has_country_modifier = me_purple_turban_rebellion }
+		NOT = { has_country_flag = me_purple_turban_rebellion_started }
+		NOT = { has_global_flag = me_purple_turban_rebellion_happened }
+	}
+	
+	immediate = { }
+	
+	is_triggered_only = no
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "me_emperor_events.3.a"
+		add_country_modifier = {
+			name = "me_purple_turban_rebellion"
+			duration = 9125
+		}
+		add_meritocracy = -10
+		add_years_of_income = -0.1
+		add_mandate = -10
+		add_corruption = 10
+		set_country_flag = me_purple_turban_rebellion_started
+		set_global_flag = me_purple_turban_rebellion_happened
+	}
+}
+
+country_event = {
+	id = me_emperor_events.4
+	title = "me_emperor_events.4.title"
+	desc = "me_emperor_events.4.desc"
+	picture = CORRUPTION_eventPicture
+	major = yes
+	
+	trigger = {
+		has_reform = celestial_empire
+		has_country_modifier = me_purple_turban_rebellion
+		NOT = { has_country_flag = me_purple_turbans_corrupted_officials }
+	}
+	
+	immediate = { }
+	
+	is_triggered_only = no
+	
+	mean_time_to_happen = {
+		months = 15
+	}
+	
+	option = {
+		name = "me_emperor_events.4.a"
+		add_meritocracy = -10
+		add_years_of_income = -0.35
+		set_country_flag = me_purple_turbans_corrupted_officials
+	}
+	
+	option = {
+		name = "me_emperor_events.4.b"
+		add_meritocracy = -5
+		add_years_of_income = -0.1
+		add_corruption = 10
+		set_country_flag = me_purple_turbans_corrupted_officials
+	}
+}
+
+country_event = {
+	id = me_emperor_events.5
+	title = "me_emperor_events.5.title"
+	desc = "me_emperor_events.5.desc"
+	picture = FORT_eventPicture
+	major = yes
+	
+	trigger = {
+		has_reform = celestial_empire
+		has_country_modifier = me_purple_turban_rebellion
+		NOT = { has_country_flag = me_purple_turbans_sieged_capital }
+	}
+	
+	immediate = { }
+	
+	is_triggered_only = no
+	
+	mean_time_to_happen = {
+		months = 15
+	}
+	
+	option = {
+		name = "me_emperor_events.5.a"
+		set_country_flag = me_purple_turbans_sieged_capital
+		capital_scope = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 15
+			}
+		}
+	}
+}
+
+country_event = {
+	id = me_emperor_events.6
+	title = "me_emperor_events.6.title"
+	desc = "me_emperor_events.6.desc"
+	picture = FORT_eventPicture
+	major = yes
+	
+	trigger = {
+		has_reform = celestial_empire
+		has_country_modifier = me_purple_turban_rebellion
+	}
+	
+	immediate = {
+		random_owned_province = {
+			limit = {
+				superregion = china_superregion
+			}
+		save_event_target_as = me_purple_turban_rebel_prov
+		}
+	}
+
+	is_triggered_only = no
+	
+	mean_time_to_happen = {
+		months = 20
+	}
+	
+	option = {
+		name = "me_emperor_events.6.a"
+		event_target:me_purple_turban_rebel_prov = {
+			spawn_rebels = {
+				type = anti_tax_rebels
+				size = 12
+			}
+		}
+	}
+}
+
+# Factions
+
+country_event = {
+	id = me_emperor_events.2
+	title = "me_emperor_events.2.title"
+	desc = "me_emperor_events.2.desc"
+	picture = ADVISOR_eventPicture
+	
+    trigger = {
+		NOT = {
+			has_country_flag = { me_emperor_factions_on }
+		}
+	}
+	
+	immediate = { }
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "me_emperor_events.2.a"
+		add_faction = me_temples
+		add_faction = me_eunuchs
+		add_faction = me_bureaucrats
+		set_country_flag = { me_emperor_factions_on }
+	}
+}

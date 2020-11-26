@@ -1,0 +1,51 @@
+# Chinese government reforms
+
+# Tier 2
+
+sangong_reform = {
+	icon = "chinese_palace"
+	allow_normal_conversion = yes
+	potential = {
+		is_emperor_of_china = yes
+	}
+	modifiers = {
+		meritocracy = 0.25
+		monarch_admin_power = 1
+	}
+	ai = {
+		factor = 1000 # Should always be picked if available
+	}
+}
+
+# Tier 3
+
+grand_secretariat_reform = {
+	icon = "asian_scripture"
+	allow_normal_conversion = yes
+	potential = {
+		is_emperor_of_china = yes
+	}
+	modifiers = {
+		global_unrest = -0.35
+	}
+	ai = {
+		factor = 1000 # Should always be picked if available
+	}
+}
+
+# Tier 4
+
+three_departments_reform = {
+	icon = "warrior_monks_reform"
+	allow_normal_conversion = yes
+	potential = {
+		is_emperor_of_china = yes
+	}
+	modifiers = {
+		stability_cost_modifier = -0.1
+		possible_adm_policy = 1
+	}
+	ai = {
+		factor = 1000 # Should always be picked if available
+	}
+}

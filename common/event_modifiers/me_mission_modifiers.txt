@@ -1,0 +1,47 @@
+mng_mongols_expelled_mod = {
+	prestige_from_land = 0.1
+	imperial_mandate = 0.05
+}
+
+mng_united_chinese_culture = {
+	same_culture_advisor_cost = -0.5
+	promote_culture_cost = -0.25
+}
+
+mng_granted_tibetan_titles_mod = {
+	reduced_liberty_desire = 10
+}
+
+mng_age_of_exploration_mod = {
+	range = 0.5
+}
+
+mng_three_teachings_mod = {
+	yearly_harmony = 0.5
+}
+
+mng_guard_battalions_mod = {
+	garrison_size = 0.1
+	global_garrison_growth = 0.1
+}
+
+mng_mission_colonized_western_america_me = {
+	global_colonial_growth = 10
+	native_assimilation = 0.25
+}
+mng_mission_conquered_mesoamerica_me = {
+	treasure_fleet_income = 0.2
+	global_tax_modifier = 0.05
+	prestige = 0.5
+}
+
+mng_mission_secure_indian_trade_me = {
+	trade_efficiency = 0.1
+	trade_company_investment_cost = -0.1
+}
+
+mng_mission_harmonize_tengri_me = {
+	cavalry_power = 0.1
+	shock_damage = 0.05
+	imperial_mandate = 0.02
+}

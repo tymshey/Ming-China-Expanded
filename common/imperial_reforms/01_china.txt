@@ -1,0 +1,150 @@
+establish_gaituguiliu_decision = {
+	empire = celestial_empire
+	emperor = {
+		meritocracy = 0.5
+		stability_cost_modifier = -0.1
+		advisor_pool = 1
+		possible_mil_policy = 1
+	}
+}
+
+seaban_decision = {
+	empire = celestial_empire
+	emperor = {
+		diplomats = 1
+		trade_efficiency = 0.05
+		global_trade_goods_size_modifier = 0.1
+	}
+}
+
+reform_land_tax_decision = {
+	empire = celestial_empire
+	emperor = {
+		global_autonomy = -0.05
+		global_tax_modifier = 0.05
+		production_efficiency = 0.05
+	}
+}
+
+military_governors_decision = {
+	empire = celestial_empire
+	emperor = {
+		core_creation = -0.1
+		army_tradition_from_battle = 0.05
+		vassal_forcelimit_bonus = 0.2
+	}
+}
+
+centralizing_top_government_decision = {
+	empire = celestial_empire
+	emperor = {
+		monarch_admin_power = 1
+		governing_capacity = 150
+		state_governing_cost = -0.1
+	}
+}
+
+Establish_Colonial_Institusion_decision = {
+	empire = celestial_empire
+	emperor = {
+		colonists = 1
+		global_tariffs = 0.15
+		possible_dip_policy = 1
+	}
+}
+
+Reform_Diplomacy_decision = {
+    empire = celestial_empire
+    emperor = {
+		diplomats = 2
+     	diplomatic_upkeep = 3
+	}
+}
+
+Establish_Wei-suo_decision = {
+    empire = celestial_empire
+    emperor = {
+		discipline = 0.05
+		defensiveness = 0.35
+		garrison_size = 0.5
+		rebel_support_efficiency = 0.2
+	}
+}
+
+Reorganize_Army_decision = {
+    empire = celestial_empire
+    emperor = {
+		movement_speed = 0.1
+		siege_ability = 0.1
+	}
+}
+
+Reorganize_Navy_decision = {
+    empire = celestial_empire
+    emperor = {
+		naval_forcelimit_modifier = 0.5
+		sailor_maintenance_modifer = -0.15
+	}
+}
+Establish_Colonial_Offices_decision = {
+    empire = celestial_empire
+    emperor = {
+		global_tariffs = 0.25
+		range = 0.1
+		treasure_fleet_income = 0.1
+	}
+}
+
+Reform_Foreign_Trade_decision = {
+    empire = celestial_empire
+    emperor = {
+		merchants = 2
+		global_trade_power = 0.15
+	}
+}
+
+Build_Trade_Cities_decision = {
+	empire = celestial_empire
+	emperor = {
+		merchants = 2
+		placed_merchant_power = 3
+	}
+}
+Centralize_Government_decision = {
+	empire = celestial_empire
+	emperor = {
+		global_tax_modifier = 0.075
+		administrative_efficiency = 0.2
+		prestige_decay = -0.02
+		governing_capacity = 100
+	}
+}
+
+Reform_Administartion_decision = {
+	empire = celestial_empire
+	emperor = {
+		possible_adm_policy = 1
+		free_adm_policy = 1
+		free_dip_policy = 1
+		free_mil_policy = 1
+		governing_capacity_modifier = 0.1
+	}
+}
+
+Revolutionize_Technology_decision = {
+	empire = celestial_empire
+	emperor = {
+		technology_cost = -0.1
+		global_institution_spread = 0.25
+		monarch_diplomatic_power = 1
+	}
+}
+
+Introduce_Shoushi_decision = {
+	empire = celestial_empire
+	emperor = {
+	reform_progress_growth = 0.5
+	global_ship_trade_power = 0.2
+	global_unrest = -2
+	}
+}

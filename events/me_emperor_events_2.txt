@@ -1,0 +1,32 @@
+namespace = me_emperor_events_2
+
+country_event = {
+	id = me_emperor_events_2.1
+	title = "me_emperor_events_2.1.t"
+	desc = "me_emperor_events_2.1.d"
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+    trigger = {
+		is_emperor_of_china = yes
+		religion = confucianism
+		culture_group = east_asian
+		NOT = { has_country_modifier = me_good_feng_shui }
+	}
+	
+	immediate = { }
+
+	is_triggered_only = no
+	
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "me_emperor_events_2.1.a"
+		add_country_modifier = {
+				name = "me_good_feng_shui"
+				duration = 3650
+		}
+		add_adm_power = 50
+	}
+}

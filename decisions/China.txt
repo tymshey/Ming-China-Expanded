@@ -1,0 +1,57 @@
+# Forbidden City decision fixed
+
+country_decisions = {
+	
+	build_the_forbidden_city = {
+		potential = {
+			OR = {
+				tag = MCH
+				tag = MNG
+				tag = QNG
+				has_reform = celestial_empire
+			}
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				capital = 1816
+				capital = 1821
+			}
+			NOT = { has_country_modifier = the_forbidden_city }
+		}
+		allow = {
+			is_at_war = no
+			OR = {
+				statesman = 3
+				adm = 3
+			}
+			OR = {
+				faction_in_power = me_bureaucrats
+				has_factions = no
+			}
+			stability = 3
+			years_of_income = 1.0
+			adm_power = 50
+		}
+		effect = {
+			add_years_of_income = -1.0
+			add_adm_power = -50
+			add_country_modifier = {
+				name = "the_forbidden_city"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { years_of_income = 1.5 }
+					NOT = { adm_power = 100 }
+				}
+			}
+		}
+	}
+}

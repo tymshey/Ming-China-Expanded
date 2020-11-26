@@ -1,0 +1,85 @@
+country_decisions = {
+
+	me_chinaedict_nation_1 = {
+		major = no
+		potential = {
+			is_emperor_of_china = yes
+			NOT = { has_country_flag = me_chinaedict_1_taken }
+		}
+		allow = {
+			is_emperor_of_china = yes
+			has_idea_group = exploration_ideas
+			has_institution = new_world_i
+		}
+		effect = {
+			add_country_modifier = {
+				name = me_chinaedict_1_support_colonialism
+				duration = -1
+			}
+			set_country_flag = me_chinaedict_1_taken
+		}
+		ai_importance = 400
+	}
+	me_chinaedict_nation_2 = {
+		major = no
+		potential = {
+			is_emperor_of_china = yes
+			NOT = { has_country_flag = me_chinaedict_2_taken }
+		}
+		allow = {
+			is_emperor_of_china = yes
+			treasury = 250
+		}
+		effect = {
+			add_country_modifier = {
+				name = me_chinaedict_2_support_missionaries
+				duration = -1
+			}
+			add_treasury = -250
+			set_country_flag = me_chinaedict_2_taken
+		}
+		ai_importance = 400
+	}
+	me_chinaedict_nation_3 = {
+		major = no
+		potential = {
+			is_emperor_of_china = yes
+			NOT = { has_country_flag = me_chinaedict_3_taken }
+		}
+		allow = {
+			is_emperor_of_china = yes
+			has_idea_group = trade_ideas
+			treasury = 300
+		}
+		effect = {
+			add_country_modifier = {
+				name = me_chinaedict_3_support_trade
+				duration = -1
+			}
+			add_treasury = -300
+			set_country_flag = me_chinaedict_3_taken
+		}
+		ai_importance = 400
+	}
+	me_chinaedict_nation_4 = {
+		major = no
+		potential = {
+			is_emperor_of_china = yes
+			NOT = { has_country_flag = me_chinaedict_4_taken }
+		}
+		allow = {
+			is_emperor_of_china = yes
+			has_idea_group = espionage_ideas
+			treasury = 300
+		}
+		effect = {
+			add_country_modifier = {
+				name = me_chinaedict_4_support_spies
+				duration = -1
+			}
+			add_treasury = -300
+			set_country_flag = me_chinaedict_4_taken
+		}
+		ai_importance = 400
+	}
+}
