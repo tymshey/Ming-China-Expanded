@@ -1,0 +1,44 @@
+tim_expansion_missions_me = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = TIM
+	}
+	has_country_shield = yes
+	
+	tim_incorporate_transoxiana = {
+		icon = mission_xianbei_desert_warriors
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				454 # Samarkhand
+				442 # Bukhara
+				445 # Marv
+				1973 # Urgench
+			}
+			NOT = {
+				owner = ROOT
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			owns = 454 # Samarkhand
+			owns = 442 # Bukhara
+			owns = 445 # Marv
+			owns = 1973 # Urgench
+		}
+		effect = {
+			kyzylkum_area = {
+				add_permanent_claim = ROOT
+			}
+			arys_area = {
+				add_permanent_claim = ROOT
+			}
+			kashgaria_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}

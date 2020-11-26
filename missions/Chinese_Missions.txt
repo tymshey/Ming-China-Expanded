@@ -1,0 +1,248 @@
+chinese_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = MNG
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	annex_dai_viet = {
+		icon = mission_chinese_general_riding
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				area = red_river_delta_area
+				area = vietnam_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			red_river_delta_area = {
+				type = all
+				owned_by = ROOT
+			}
+			vietnam_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_adm_power = 100
+		}
+	}
+	mng_mission_conquer_mongolia = {
+		icon = GFX_mission_xianbei_desert_warriors
+		required_missions = { annex_dai_viet }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = xilin_gol_area
+				area = ordos_area
+				area = chahar_area
+				area = central_mongolia_area
+				area = inner_mongolia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			ordos_area = {
+				type = all
+				owned_by = ROOT
+			}
+			xilin_gol_area = {
+				type = all
+				owned_by = ROOT
+			}
+			chahar_area = {
+				type = all
+				owned_by = ROOT
+			}
+			central_mongolia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			inner_mongolia_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_adm_power = 150
+		}
+	}
+	mng_mission_conquer_manchuria = {
+		icon = GFX_mission_jurchen_cavalrymen
+		required_missions = { mng_mission_conquer_mongolia }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = ilan_hala_area
+				area = jilin_area
+				area = furdan_area
+				area = cicigar_area
+				area = ningguta_area
+				area = central_heilongjiang_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			ilan_hala_area = {
+				type = all
+				owned_by = ROOT
+			}
+			jilin_area = {
+				type = all
+				owned_by = ROOT
+			}
+			furdan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			cicigar_area = {
+				type = all
+				owned_by = ROOT
+			}
+			ningguta_area = {
+				type = all
+				owned_by = ROOT
+			}
+			central_heilongjiang_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_adm_power = 200
+		}
+	}
+	mandate_of_heaven_mission = {
+		icon = mission_scholar_officials
+		required_missions = { mng_mission_conquer_manchuria }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				region = south_china_region
+				region = xinan_region
+				region = north_china_region
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			NOT = {
+				current_age = age_of_discovery
+				current_age = age_of_reformation
+			}
+			south_china_region = {
+				type = all
+				owned_by = ROOT
+			}
+			xinan_region = {
+				type = all
+				owned_by = ROOT
+			}
+			north_china_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			red_river_delta_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			vietnam_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			korea_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	defend_korea = {
+		icon = mission_kowtow
+		required_missions = { mandate_of_heaven_mission }
+		position = 7
+		provinces_to_highlight = {
+			region = korea_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			korea_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_adm_power = 100
+		}
+	}
+}
+
+chinese_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = MNG
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	colonize_taiwan = {
+		icon = mission_invade_island
+		required_missions = {  }
+		position = 1
+		provinces_to_highlight = {
+			area = taiwan_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			2154 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2155 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			738 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "colonial_enthusiasm"
+				duration = 7300
+			}
+		}
+	}
+}

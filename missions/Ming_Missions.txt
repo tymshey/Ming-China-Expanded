@@ -1,0 +1,294 @@
+mng_expansion_missions_me = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		swap_non_generic_missions = yes
+		tag = MNG
+	}
+	has_country_shield = yes
+	
+	mng_colonize_western_america_mission = {
+		icon = "GFX_mission_usa_old_western_regions_map"
+		required_missions = { colonize_taiwan }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = alta_california_area
+				area = north_california_area
+				area = oregon_area
+				area = puget_sound_area
+				area = straits_of_georgia_area
+				area = hecate_strait_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			alta_california_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			north_california_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			oregon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			straits_of_georgia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hecate_strait_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "mng_mission_colonized_western_america_me"
+				duration = 9125
+			}
+		}
+	}
+	mng_conquer_mesoamerica_mission = {
+		icon = "GFX_mission_mayan_city"
+		required_missions = {
+			mng_colonize_western_america_mission
+		}
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				region = mexico_region
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			mexico_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = mng_mission_conquered_mesoamerica_me
+				duration = -1
+			}
+		}
+	}
+	mng_secure_trade_mission = {
+		icon = "GFX_mission_chinese_officials_in_line"
+		required_missions = {
+			mng_conquer_mesoamerica_mission
+		}
+		position = 4
+		provinces_to_highlight = {
+		}
+		trigger = {
+			home_trade_node = {
+				is_strongest_trade_power = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = mng_mission_secure_trade_me
+				duration = -1
+			}
+		}
+	}
+	mng_harmonize_tengri_mission = {
+		icon = "GFX_mission_chinese_son_of_heaven"
+		required_missions = {
+			mng_secure_trade_mission
+		}
+		position = 5
+		trigger = {
+			OR = {
+				religion = confucianism
+				religion = neo_confucianism
+				religion = taoism
+			}
+			OR = {
+				has_harmonized_with = pagan
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = mng_mission_harmonize_tengri_me
+				duration = -1
+			}
+		}
+	}
+	mng_the_three_libraries_mission = {
+		icon = "GFX_mission_chinese_castle_tower"
+		required_missions = {
+			
+		}
+		position = 6
+		trigger = {
+			temple = 3
+		}
+		effect = {
+			add_country_modifier = {
+				name = me_mng_mission_the_three_libraries
+				duration = -1
+			}
+		}
+	}
+	mng_the_preservation_of_knowledge_mission = {
+		icon = "GFX_mission_chinese_castle_tower"
+		required_missions = {
+			mng_the_three_libraries_mission
+		}
+		position = 7
+		trigger = {
+			university = 3
+			statesman = 3
+		}
+		effect = {
+			add_country_modifier = {
+				name = me_mng_mission_the_preservation_of_knowledge
+				duration = -1
+			}
+		}
+	}
+}
+mng_trade_missions_me = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = MNG
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	mng_indian_trade_controlled_mission = {
+		icon = "GFX_mission_chinese_officials_in_line"
+		required_missions = {
+			
+		}
+		position = 3
+		trigger = {
+			trader = 2
+			1340 = {
+				is_strongest_trade_power = ROOT
+			}
+			1343 = {
+				is_strongest_trade_power = ROOT
+			}
+			504 = {
+				is_strongest_trade_power = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = me_mng_mission_indian_trade
+				duration = -1
+			}
+		}
+	}
+	mng_spice_trade_controlled_mission = {
+		icon = "GFX_mission_chinese_warlords_alliance"
+		required_missions = {
+			mng_indian_trade_controlled_mission
+		}
+		position = 4
+		trigger = {
+			trader = 2
+			1361 = {
+				is_strongest_trade_power = ROOT
+			}
+			1357 = {
+				is_strongest_trade_power = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = me_mng_mission_spice
+				duration = -1
+			}
+		}
+	}
+}
+mng_slot4_missions_me = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = MNG
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	mng_the_three_teachings_mission = {
+		icon = "GFX_mission_chinese_son_of_heaven"
+		required_missions = {
+			mng_the_three_libraries_mission
+		}
+		position = 7
+		trigger = {
+			has_harmonized_with = buddhism
+			has_harmonized_with = vajrayana
+		}
+		effect = {
+			add_adm_power = 200
+			add_prestige = 20
+		}
+	}
+	mng_influence_tibet_mission = {
+		icon = "GFX_mission_chinese_son_of_heaven"
+		required_missions = {
+			mng_the_preservation_of_knowledge_mission
+		}
+		position = 8
+		trigger = {
+			677 = {
+				owner = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+			}
+		}
+		effect = {
+			add_adm_power = 250
+			add_prestige = 15
+		}
+	}
+}
+mng_slot2_missions_me = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = MNG
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	mng_the_chinese_prosperity_mission = {
+		icon = "GFX_mission_forbidden_city"
+		required_missions = {
+			mng_the_preservation_of_knowledge_mission
+		}
+		position = 8
+		trigger = {
+			stability = 3
+			statesman = 3
+		effect = {
+			add_country_modifier = {
+				name = me_mng_mission_the_chinese_prosperity
+				duration = -1
+			}
+		}
+	}
+}
