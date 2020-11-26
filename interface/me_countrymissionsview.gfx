@@ -15,24 +15,4 @@ spriteTypes = {
 		name = "GFX_mission_chinese_son_of_heaven"
 		texturefile = "gfx//interface//missions//mission_chinese_son_of_heaven.dds"
 	}
-	spriteType = {
-		name = "GFX_mission_chinese_warlords_alliance"
-		texturefile = "gfx//interface//missions//mission_chinese_warlords_alliance.dds"
-	}
-	spriteType = {
-		name = "GFX_mission_chinese_castle_tower"
-		texturefile = "gfx//interface//missions//mission_chinese_castle_tower.dds"
-	}
-	spriteType = {
-		name = "GFX_mission_xianbei_desert_warriors"
-		texturefile = "gfx//interface//missions//mission_xianbei_desert_warriors.dds"
-	}
-	spriteType = {
-		name = "GFX_mission_jurchen_cavalrymen"
-		texturefile = "gfx//interface//missions//mission_jurchen_cavalrymen.dds"
-	}
-	spriteType = {
-		name = "GFX_mission_forbidden_city"
-		texturefile = "gfx//interface//missions//mission_forbidden_city.dds"
-	}
 }

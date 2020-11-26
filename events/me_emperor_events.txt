@@ -37,8 +37,6 @@ country_event = {
 	}
 }
 
-# Purple Turban Rebellion
-
 country_event = {
 	id = me_emperor_events.3
 	title = "me_emperor_events.3.title"

@@ -18,7 +18,7 @@ eastern = {
 		heretic = { TAOIST }
 		uses_harmony = yes
 		
-		holy_sites = { 1816 1836 679 1821 4790 }
+		holy_sites = { 1816 700 679 707 691 }
 		
 		blessings = {
 			me_legitimize_government
