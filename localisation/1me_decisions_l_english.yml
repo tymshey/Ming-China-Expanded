@@ -1,0 +1,57 @@
+﻿l_english:
+
+# China
+
+me_ming_nation_1_title:0 "Build Great Canal"
+me_ming_nation_1_desc:0 "Build the great chinese canal network."
+me_ming_nation_2_title:0 "Build Great Capital Of The East"
+me_ming_nation_2_desc:0 "Build the Great Capital Of The East to prove our strength."
+me_ming_nation_3_title:0 "Fortify key cities of China"
+me_ming_nation_3_desc:0 "Fortifying key cities of China: Beijing, Nanjing and Guangzhou is important to keep our empire safe."
+me_ming_nation_4_title:0 "Charter Colonies"
+me_ming_nation_4_desc:0 "Charter colonies."
+me_ming_nation_5_title:0 "Establish Jinyi Wei"
+me_ming_nation_5_desc:0 "Jinyi Wei was the imperial secret police that served the emperors of the Ming dynasty in China. The guard was founded by the Hongwu Emperor in 1368 to serve as his personal bodyguards."
+me_ming_nation_factions_title:0 "Establish Factions"
+me_ming_nation_factions_desc:0 "Establish factions"
+me_china_nation_rebuild_six_harmonies_pagoda_title:0 "Rebuild Six Harmonies Pagoda"
+me_china_nation_rebuild_six_harmonies_pagoda_desc:0 "The pagoda was originally constructed by the ruler of the Wuyue Kingdom, whose capital was Hangzhou. The name Liuhe comes from the six Buddhist ordinances and it is said that the reason for building the pagoda was to calm the tidal bore of the Qiantang River and as a navigational aid. However, the pagoda was completely destroyed during warfare in the year 1121 and reconstructed fully by 1165. Then additional exterior eaves were added during the Ming Dynasty."
+me_china_nation_form_dongguo_title:0 "Form the Great Empire of the East"
+me_china_nation_form_dongguo_desc:0 "Dongguo, the Empire of the East. A unified Empire of Chinese, Mongols, Khmers, Tibetans, Koreans, and Indonesians. An Empire that will last a thousand years."
+
+# Chinese Edicts
+
+me_chinaedict_nation_1_title:0 "Pass Edict of Support for Colonialism"
+me_chinaedict_nation_1_desc:0 "Edict of supporting the efforts of our colonists."
+me_chinaedict_nation_2_title:0 "Pass Edict of Support for Missionaries"
+me_chinaedict_nation_2_desc:0 "Edict of supporting the efforts of our missionaries."
+me_chinaedict_nation_3_title:0 "Pass Edict of Support for the Merchants."
+me_chinaedict_nation_3_desc:0 "Edict of supporting the efforts of our merchants."
+me_chinaedict_nation_4_title:0 "Pass Edict of Support for Espionage"
+me_chinaedict_nation_4_desc:0 "Edict of supporting the efforts of our spies."
+
+# Policies
+
+me_ming_nation_policy_colonization_1_title:0 "Policy: Colonization"
+me_ming_nation_policy_colonization_1_desc:0 "Select colonization policy."
+me_ming_nation_policy_colonization_1_remove:0 "_Remove Colonization Policy"
+me_ming_nation_policy_colonization_1_remove_title:0 "Remove Colonization Policy"
+me_ming_nation_policy_colonization_1_remove_desc:0 "Remove colonization policy to select a new one."
+me_ming_nation_policy_wardoctrine_1_title:0 "Policy: War Doctrine"
+me_ming_nation_policy_wardoctrine_1_desc:0 "Select war doctrine policy."
+me_ming_nation_policy_wardoctrine_1_remove:0 "_Remove War Doctrine Policy"
+me_ming_nation_policy_wardoctrine_1_remove_title:0 "Remove War Doctrine Policy"
+me_ming_nation_policy_wardoctrine_1_remove_desc:0 "Remove war doctrine policy to select a new one."
+
+# Timurids
+
+me_timurids_nation_restore_mongol_empire_title:0 "Restore Mongol Empire"
+me_timurids_nation_restore_mongol_empire_desc:0 "We are descendants of the great Genghis Khan and his legitimate successors. We can make Timur I's dreams of reuniting Mongol Empire come true!"
+me_timurids_nation_control_hormuz_trade_title:0 "Control and fortify Hormuz Trade"
+me_timurids_nation_control_hormuz_trade_desc:0 "If we take control of Masqat coast and the Hormuz island itself we could establish powerful trade network in India and Arabia. We will have to build a fortress near the Hormuz Strait to protect our trade form pirates."
+me_timurids_nation_restore_ilkhanate_title:0 "Restore Ilkhanate"
+me_timurids_nation_restore_ilkhanate_desc:0 "Before we restore Mongol Empire, we have to restore the Ilkhanate of Hulagu Khan."
+me_timurids_nation_rebuild_bibikhanym_mosque_title:0 "Rebuild the Bibi-Khanym Mosque"
+me_timurids_nation_rebuild_bibikhanym_mosque_desc:0 "Rebuild the Bibi-Khanym Mosque of Samarkhand."
+me_timurids_nation_build_mosque_of_gawhar_shad_title:0 "Rebuild the Mosque of Gawhar Shad"
+me_timurids_nation_build_mosque_of_gawhar_shad_desc:0 "Rebuild the Mosque of Gawhar Shad of Mashhad."

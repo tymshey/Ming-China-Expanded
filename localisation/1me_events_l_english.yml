@@ -1,0 +1,49 @@
+﻿l_english:
+
+# Celestial Emperor events
+
+me_emperor_events.1.t:0 "Eunuchs in control of the Emperor"
+me_emperor_events.1.d:0 "One of the Emperor's close eunuch advisor gained trust of the Emperor and controlled the court. This man banished the loyal officials and replaced them with his loyal followers, they took over some critical positions of the Empire and drained out the last money from Imperial Treasury."
+me_emperor_events.1.a:0 "We have to restore control over them."
+me_emperor_events_2.1.t:0 "Good Feng Shui"
+me_emperor_events_2.1.d:0 "New recently built residental disctrict has good feng shui and is attracting a large amount of people to move there."
+me_emperor_events_2.1.a:0 "Good"
+me_emperor_events.2.title:0 "Factions Emerge"
+me_emperor_events.2.desc:0 "Three factions of Commanderies, Eunuchs and Bureaucrats have emerged."
+me_emperor_events.2.a:0 "Ok"
+me_emperor_events.3.title:0 "Purple Turban Rebellion"
+me_emperor_events.3.desc:0 "The Purple Turban rebellion have rose up against our rule!"
+me_emperor_events.3.a:0 "We have to stop them."
+me_emperor_events.4.title:0 "Officials corrupted by the Purple Turbans!"
+me_emperor_events.4.desc:0 "Imperial officials have been corrupted by the Purple Turbans!"
+me_emperor_events.4.a:0 "Give the officials money they want. We need them on our side!"
+me_emperor_events.4.b:0 "There is nothing we can do."
+me_emperor_events.5.title:0 "Capital sieged by Purple Turbans"
+me_emperor_events.5.desc:0 "Purple Turban rebellion forces manged to assemble an army and lay siege to our capital."
+me_emperor_events.5.a:0 "Defend the capital!"
+me_emperor_events.6.title:0 "Purple Turban rebellion rose up in [me_purple_turban_rebel_prov.GetName]"
+me_emperor_events.6.desc:0 "The Purple Turbans have gathered an army in the [me_purple_turban_rebel_prov.GetName] and are getting ready to strike the local city. If we don't stop them, they could destroy the entire empire. We need to act fast."
+me_emperor_events.6.a:0 "Crush them!"
+
+# Timurid events
+
+me_timurids_events.1.title:0 "Build a Great Mosque"
+me_timurids_events.1.desc:0 "Great Mosque is the first mosque built in a larger city. If we could build one, it would be a manifest of our power."
+me_timurids_events.1.a:0 "Build a great mosque."
+me_timurids_events.1.b:0 "Don't build it."
+
+# Policy selection events
+
+me_emperor_policy_colonization.1.title:0 "Colonization Policy"
+me_emperor_policy_colonization.1.desc:0 "What should be our colonization policy?"
+me_emperor_policy_colonization.1.a:0 "Cooperate with natives."
+me_emperor_policy_colonization.1.b:0 "Passive. Don't harm natives, but also don't trade with them."
+me_emperor_policy_colonization.1.c:0 "Aggresive. If natives come close to us, kill the intruders."
+me_emperor_policy_colonization.1.d:0 "Exterminate natives. We need living space for our people."
+me_emperor_policy_wardoctrine.1.title:0 "War Doctrine Policy"
+me_emperor_policy_wardoctrine.1.desc:0 "What should be our war doctrine?"
+me_emperor_policy_wardoctrine.1.a:0 "Keep casualities at minimum at our side and the enemy side."
+me_emperor_policy_wardoctrine.1.b:0 "Fight normally but don't hurt civilians. They are not a thread."
+me_emperor_policy_wardoctrine.1.c:0 "Civilians produce weapons for our enemies so take them alive or dead and force them to join our army."
+me_emperor_policy_wardoctrine.1.d:0 "Burn all of enemy infrastructure, kill every enemy on the way."
+me_emperor_policy_wardoctrine.1.e:0 "Defensive. No return, just more men on the front to defend our nation."

@@ -1,0 +1,110 @@
+﻿l_english:
+ # Mission modifiers
+ 
+ # MNG Ming missions modifiers
+ mng_mongols_expelled_mod:0 "Mongols Expelled"
+ mng_united_chinese_culture:0 "Chinese Cultural Union"
+ mng_granted_tibetan_titles_mod:0 "Titles Granted"
+ desc_mng_granted_tibetan_titles_mod:0 "Having gained influence over Tibet, our granting of court titles to religious and political leaders in Tibet have ensured their loyalty to us."
+ mng_age_of_exploration_mod:0 "Age of Exploration"
+ mng_three_teachings_mod:0 "Three Teachings Embraced"
+ mng_guard_battalions_mod:0 "Guard Battalions"
+ mng_mission_colonized_western_america_me:0 "Colonial Developement"
+ desc_mng_mission_colonized_western_america_me:0 "Colonial Developement"
+ mng_mission_conquered_mesoamerica_me:0 "Mesoamerican Gold Secured"
+ desc_mng_mission_conquered_mesoamerica_me:0 "Mesoamerican Gold Secured"
+ mng_mission_secure_trade_me:0 "Secured Trade"
+ desc_mng_mission_secure_trade_me:0 "Home region trade secured."
+ mng_mission_harmonize_buddhism_me:0 "Harmonized Buddhism"
+ me_mng_mission_the_three_libraries:0 "The Three Libraries"
+ desc_me_mng_mission_the_three_libraries:0 "The three libraries."
+ me_mng_mission_the_preservation_of_knowledge:0 "The Preservation of Knowledge"
+ desc_me_mng_mission_the_preservation_of_knowledge:0 "The preservation of knowledge."
+ me_mng_mission_indian_trade:0 "Indian Trade Secured"
+ desc_me_mng_mission_indian_trade:0 "Indian trade secured."
+ me_mng_mission_spice:0 "Spice Controlled"
+ desc_me_mng_mission_spice:0 "Moluccan spice trade is in our control."
+ me_mng_mission_the_chinese_prosperity:0 "The Chinese Prosperity"
+ desc_me_mng_mission_the_chinese_prosperity:0 "China always had been a land of prosperity, except the times of war. Many wars, rebellions and years of unrest caused that prosperity to suffer. We have to rebuild all that was lost, and bring golden age to the Middle Kingdom once again."
+ mng_mission_harmonize_tengri_me:0 "Harmonized Tengriism"
+ 
+ # Chinese country modifiers
+ 
+ me_mng_charter_colonies:0 "Charter Colonies"
+ desc_me_mng_charter_colonies:0 "Charter Colonies"
+ me_mng_jinyi_wei:0 "Jinyi Wei"
+ desc_me_mng_jinyi_wei:0 "Jinyi Wei was the imperial secret police that served the emperors of the Ming. It was tasked with collecting military intelligence on the enemy and participation in battles during planning. The guards donned a distinctive golden-yellow uniform, with a tablet worn on his torso, and carried a special blade weapon. Jinyi Wei was given the authority to overrule judicial proceedings in prosecutions with full autonomy in arresting, interrogating and punishing anyone, including nobles and the emperor's relatives."
+ me_dongguo_formed:0 "Dongguo Formed"
+ desc_me_dongguo_formed:0 "Dongguo - The Great Empire of the East has been created by us. We have forged a dynasty that will rule the east for a thousand years!"
+ 
+ # Chinese edicts modifiers
+ me_chinaedict_1_support_colonialism:0 "Edict of Support for Colonialism"
+ desc_me_chinaedict_1_support_colonialism:0 "Edict of supporting the efforts of our colonists."
+ me_chinaedict_2_support_missionaries:0 "Edict of Support for Missionaries"
+ desc_me_chinaedict_2_support_missionaries:0 "Edict of supporting the efforts of our missionaries."
+ me_chinaedict_3_support_trade:0 "Edict of Support for the Merchants"
+ desc_me_chinaedict_3_support_trade:0 "Edict of supporting the efforts of our Merchants."
+ me_chinaedict_4_support_spies:0 "Edict of Support for Espionage"
+ desc_me_chinaedict_4_support_spies:0 "Edict of supporting the efforts of our spies."
+ 
+ # Timurids country modifiers
+ 
+ me_timurids_control_hormuz_trade:0 "Hormuz trade control"
+ desc_me_timurids_control_hormuz_trade:0 "We are in control of the rich Hormuz Strait trade and thus we are in control of the Persian Gulf."
+ me_timurids_ilkhanate_restored:0 "Ilkhanate Restored"
+ desc_me_timurids_ilkhanate_restored:0 "Ilkhanate has been restored."
+ 
+ # Event modifiers
+ 
+ me_purple_turban_rebellion:0 "Purple Turban Rebellion"
+ desc_me_purple_turban_rebellion:0 "Purple turban rebellion."
+ 
+ # Celestial Emperor events
+ 
+ eunuchs_corrupt_the_country:0 "Eunuchs in control of the Emperor"
+ desc_eunuchs_corrupt_the_country:0 "Eunuchs in control of the Emperor"
+ me_good_feng_shui:0 "Good Feng Shui"
+ desc_me_good_feng_shui:0 "Good Feng Shui"
+ 
+ # Province modifiers
+ 
+ me_great_chinese_canal:0 "Great Canal"
+ desc_great_chinese_canal:0 "Great canal built."
+ me_great_chinese_capital:0 "Great Capital Of The East"
+ desc_great_chinese_capital:0 "Great capital of the east was constructed to prove our dominance over other nations."
+ me_fortified_key_city:0 "Key City Fortifications"
+ desc_me_fortified_key_city:0 "Key cities of China have been fortified."
+ me_major_colonial_port:0 "Major Colonial Port"
+ desc_me_major_colonial_port:0 "This province is a major colonial port in the region. Many ships travelling between colonies and our homeland sail here."
+ me_six_harmonies_pagoda_rebuilt:0 "Six Harmonies Pagoda"
+ desc_me_six_harmonies_pagoda_rebuilt:0 "The pagoda was originally constructed by the ruler of the Wuyue Kingdom, whose capital was Hangzhou. The name Liuhe comes from the six Buddhist ordinances and it is said that the reason for building the pagoda was to calm the tidal bore of the Qiantang River and as a navigational aid. However, the pagoda was completely destroyed during warfare in the year 1121 and reconstructed fully by 1165. Then additional exterior eaves were added during the Ming Dynasty."
+ me_dongguo_capital:0 "Capital of the Dongguo Empire"
+ desc_me_dongguo_capital:0 "The capital city of the Dongguo Empire, the Capital of the East."
+ 
+ 
+ me_bibikhanym_mosque:0 "Bibi-Khanym Mosque"
+ desc_me_bibikhanym_mosque:0 "Bibi-Khanym Mosque is one of the most important monuments of Samarkand. After his Indian campaign in 1399 Timur (Tamerlane) decided to undertake the construction of a gigantic mosque in his new capital, Samarkand. When Timur returned from his military campaign in 1404 the mosque was almost completed. In the 15th century it was one of the largest and most magnificent mosques in the Islamic world."
+ me_mosque_of_gawhar_shad:0 "Mosque of Gawhar Shad"
+ desc_me_mosque_of_gawhar_shad:0 "It was built by the order of Empress Goharshad, the wife of Shah Rukh of the Timurid dynasty in 1418 CE. The architect of the edifice was Ghavameddin Shirazi, who is responsible for so many of Shah Rukh's great buildings, with the architectural and decorative manpower supplied from Shiraz and Isfahan."
+ 
+ # Policy modifiers
+ 
+ me_policy_colonization_1:0 "Cooperation with natives"
+ me_policy_colonization_2:0 "Passive colonization"
+ me_policy_colonization_3:0 "Aggresive colonization"
+ me_policy_colonization_4:0 "Native extermination"
+ me_policy_wardoctrine_1:0 "Minimum casualities"
+ me_policy_wardoctrine_2:0 "Balanced war policy"
+ me_policy_wardoctrine_3:0 "Aggresive war policy"
+ me_policy_wardoctrine_4:0 "Very aggresive war policy"
+ me_policy_wardoctrine_5:0 "No return"
+ 
+ # Not used
+ 
+ mng_mongols_expelled_mod:0 "Mongols Expelled"
+ mng_united_chinese_culture:0 "Chinese Cultural Union"
+ mng_granted_tibetan_titles_mod:0 "Titles Granted"
+ desc_mng_granted_tibetan_titles_mod:0 "Having gained influence over Tibet, our granting of court titles to religious and political leaders in Tibet have ensured their loyalty to us."
+ mng_age_of_exploration_mod:0 "Age of Exploration"
+ mng_three_teachings_mod:0 "Three Teachings Embraced"
+ mng_guard_battalions_mod:0 "Guard Battalions"

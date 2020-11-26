@@ -1,0 +1,23 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_faction_bg_me_timurids_traders"
+        texturefile = "gfx//interface//faction_blue_frame.tga"
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_faction_me_timurids_traders"	
+        texturefile = "gfx//interface//china_bureaucrat.dds"
+    }
+}
+
+spriteTypes = {
+    spriteType = {
+        name = "GFX_faction_bg_me_timurids_ghazi_warriors"
+        texturefile = "gfx//interface//faction_blue_frame.tga"
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_faction_me_timurids_ghazi_warriors"	
+        texturefile = "gfx//interface//china_bureaucrat.dds"
+    }
+}

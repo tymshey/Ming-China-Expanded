@@ -1,0 +1,17 @@
+﻿l_english:
+
+weisuo_corruption:0 "Wei-suo System Corrpution"
+desc_weisuo_corruption:0 "Wei-suo system corruption."
+
+chinese_peasant_war:0 "Chinese Peasant War"
+desc_chinese_peasant_war:0 "Chinese peasant war."
+
+me_tumu_crisis:0 "Tumu Crisis"
+desc_me_tumu_crisis:0 "Tumu crisis."
+
+disaster_weisuo_system_corruption.1.t:0 "Wei'suo Corruption"
+disaster_weisuo_system_corruption.1.d:0 "Time had been changed and the situation is now very different from the past. The soldiers’ positions were hereditary, and many were given land so as to make the army self-supporting. The troops became uninterested in warfare, and the army disintegrated."
+weisuo_system_corruption1_option1:0 "Damn that!"
+disaster_weisuo_system_corruption.2.t:0 "Wei'suo Corrpution End"
+disaster_weisuo_system_corruption.2.d:0 "Corruption on military forces finally came to end."
+weisuo_system_corruption2_option1:0 "Good to see."

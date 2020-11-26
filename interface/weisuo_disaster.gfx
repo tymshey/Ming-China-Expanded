@@ -1,0 +1,8 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_disaster_weisuo_corruption"
+		texturefile = "gfx//interface//disasters//weisuo_system_corruption.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+}

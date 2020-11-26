@@ -1,0 +1,7 @@
+spriteTypes = {	
+	spriteType = {
+		name = ""
+		texturefile = gfx//interface//government_reform_icons//me_arabic_scripture.dds
+		loadType = INGAME
+	}
+}
